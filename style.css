@@ -71,16 +71,33 @@ header {
 .hero {
   min-height: 90vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  background: linear-gradient(to right, #111827, #1e3a8a);
+  background: linear-gradient(135deg, #111827, #1e3a8a);
   color: white;
-  padding: 20px;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.intro {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .hero h2 {
-  font-size: 45px;
+  font-size: 52px;
   margin-bottom: 15px;
 }
 
@@ -93,6 +110,12 @@ header {
   margin-bottom: 25px;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -101,10 +124,36 @@ header {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
   background: white;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid #38bdf8;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #111827;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.hero-card h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
 }
 
 /* Image Style */
@@ -139,6 +188,30 @@ header {
   max-width: 700px;
   margin: auto;
   font-size: 18px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.skills span {
+  background: #111827;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #38bdf8;
+  color: #111827;
+  transform: translateY(-3px);
 }
 
 /* Project Section */
@@ -220,8 +293,21 @@ footer {
     display: flex;
   }
 
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
   .hero h2 {
-    font-size: 32px;
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .projects-container {
