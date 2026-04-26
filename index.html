@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben Collins | Profolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
 
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View Projects</a>
-                    <a href="CV.pdf" class="btn btn-outline" download>Download CV</a>
+                    <a href="docs/CV.pdf" class="btn btn-outline" download>Download CV</a>
                 </div>
             </div>
 
@@ -75,6 +76,7 @@
     <section id="skills" class="section">
         <h2>Skills</h2>
 
+        <!-- List of Learned Skills -->
         <div class="skills">
             <span>HTML</span>
             <span>CSS</span>
@@ -121,7 +123,7 @@
 
                 <h3>Stop-Sign-Runner</h3>
                 <p>A full-stack web game with user authentication, player accounts,
-  and a high-score database system.</p>
+                    and a high-score database system.</p>
 
                 <!-- Tech Used -->
                 <div class="tech-stack">
@@ -146,9 +148,7 @@
             <strong>Customer Assistant – Lidl</strong><br>
             Worked in a team-focused retail environment, developing communication, problem-solving,
             and time management skills while using in-store systems.
-        </p>
-
-        <br>
+        </p><br>
 
         <p>
             <strong>Restaurant Waiter – Ben Wyvis Hotel</strong><br>
@@ -160,12 +160,30 @@
     <!-- Contact -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:bencollins315@gmail.com">bencollins315@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/bcroman" target="_blank">bcroman</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ben-collins-299097326" target="_blank">Ben Collins</a></p>
+
+        <div class="contact-container">
+
+            <a href="mailto:bencollins315@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>bencollins315@gmail.com</p>
+            </a>
+
+            <a href="https://github.com/bcroman" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <p>bcroman</p>
+            </a>
+
+            <a href="https://linkedin.com/in/ben-collins-299097326" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Ben Collins</p>
+            </a>
+
+        </div>
     </section>
 
-    <!-- Site Scripts -->
     <script src="script.js"></script>
 
     <!-- Page Footer -->
