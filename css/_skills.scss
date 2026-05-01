@@ -23,5 +23,24 @@
 .skills span:hover {
   background: $blue;
   color: $card;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.05);
+}
+
+// Groups
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.skills-group h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: $blue;
+}
+
+.highlight {
+  border: 1px solid $blue;
 }

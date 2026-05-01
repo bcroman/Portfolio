@@ -199,7 +199,7 @@ footer {
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 70px 20px;
+  padding: 70px 10px;
   text-align: center;
   animation: fadeIn 0.8s ease-in;
 }
@@ -216,7 +216,7 @@ footer {
 }
 .section h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #f8fafc;
 }
 
@@ -224,6 +224,42 @@ footer {
   max-width: 700px;
   margin: auto;
   font-size: 18px;
+}
+
+.experience-item {
+  background: #111827;
+  padding: 25px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.experience-item h3 {
+  color: #f8fafc;
+  margin-bottom: 5px;
+}
+
+.experience-item ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+}
+
+.demo-placeholder {
+  text-align: center;
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+.demo-placeholder h1 {
+  margin-bottom: 15px;
+}
+
+.demo-placeholder p {
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
 /* =========================
@@ -249,7 +285,25 @@ footer {
 .skills span:hover {
   background: #38bdf8;
   color: #111827;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.skills-group h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #38bdf8;
+}
+
+.highlight {
+  border: 1px solid #38bdf8;
 }
 
 /* =========================
@@ -257,7 +311,7 @@ footer {
 ========================= */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-top: 30px;
 }
@@ -340,6 +394,15 @@ footer {
   border-radius: 20px;
   font-size: 13px;
   font-weight: bold;
+}
+
+.project-card ul {
+  padding-left: 20px;
+}
+
+.project-card li {
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 /* =========================

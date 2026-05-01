@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ben Collins | Profolio</title>
+    <title>Ben Collins | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -34,15 +34,16 @@
         <div class="hero-content">
 
             <div class="hero-text">
-                <p class="intro">Junior Web Developer</p>
+                <p class="intro">Junior Full-Stack Developer</p>
                 <h2>Hi, I'm <span>Ben Collins</span></h2>
                 <p>
-                    Computing (Software Engineering) student building clean, responsive web applications.
+                    I build responsive web applications with authentication, databases, and backend logic.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View Projects</a>
                     <a href="docs/CV.pdf" class="btn btn-outline" download>Download CV</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
 
@@ -58,17 +59,12 @@
     <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-            I am a Computing (Software Engineering) student with experience in web and software development.
-            I enjoy building full-stack applications and working with technologies such as JavaScript, Python, and SQL.
-        </p><br>
-
-        <p>
-            I have developed academic and personal projects including web applications and games,
-            and I am particularly interested in backend development and database systems.
-        </p><br>
-
-        <p>
-            I am currently looking to develop my skills further and gain experience in a professional environment.
+            I'm a Software Engineering graduate with hands-on experience building full-stack web
+            applications and Android apps. I have a strong interest in backend development, with
+            experience using PHP, MySQL, and Node.js. My projects include authentication systems,
+            database design, and interactive web applications. I'm comfortable working across the
+            development lifecycle, from design through to deployment, and I'm currently seeking a
+            graduate or junior software engineering role.
         </p>
     </section>
 
@@ -76,18 +72,58 @@
     <section id="skills" class="section">
         <h2>Skills</h2>
 
-        <!-- List of Learned Skills -->
-        <div class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>C#</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>Git</span>
-            <span>Node.js</span>
+        <div class="skills-container">
+
+            <!-- Frontend -->
+            <div class="skills-group">
+                <h3>Frontend</h3>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>SASS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skills-group">
+                <h3>Backend</h3>
+                <div class="skills">
+                    <span class="highlight">PHP</span>
+                    <span>Node.js</span>
+                    <span class="highlight">Python</span>
+                </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skills-group">
+                <h3>Database</h3>
+                <div class="skills">
+                    <span class="highlight">MySQL</span>
+                </div>
+            </div>
+
+            <!-- Other Languages -->
+            <div class="skills-group">
+                <h3>Additional Languages</h3>
+                <div class="skills">
+                    <span>Java</span>
+                    <span>C#</span>
+                    <span>Kotlin</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills-group">
+                <h3>Tools & Technologies</h3>
+                <div class="skills">
+                    <span class="highlight">Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -102,8 +138,11 @@
                 <img src="images/project1.png" alt="Auto Grid Park Project">
 
                 <h3>Auto-Grid-Park</h3>
-                <p>A CSS Grid learning tool that helps users practise grid layout concepts.
-                    Built with HTML, CSS, JavaScript, and JSON-based level data.</p>
+                <ul>
+                    <li>Built a grid-based learning tool using HTML CSS, JavaScript</li>
+                    <li>Implemented dynamic level rendering and validation using JSON data </li>
+                    <li>Developed client-side logic to manger user interaction and grid state </li>
+                </ul>
 
                 <!-- Tech Used -->
                 <div class="tech-stack">
@@ -122,8 +161,13 @@
                 <img src="images/project2.png" alt="Stop Sign Runner Project">
 
                 <h3>Stop-Sign-Runner</h3>
-                <p>A full-stack web game with user authentication, player accounts,
-                    and a high-score database system.</p>
+                <ul>
+                    <li>Developed a full stack browser-based game with user authentication and persistent
+                        high scores </li>
+                    <li>Designed backend logic using PHP and MySQL, including database schema for
+                        users and scores </li>
+                    <li>Implemented logic system and session handling</li>
+                </ul>
 
                 <!-- Tech Used -->
                 <div class="tech-stack">
@@ -138,23 +182,50 @@
                     target="_blank">Live Demo</a>
                 <a href="https://github.com/bcroman/Stop-Sign-Runner" class="project-link" target="_blank">GitHub</a>
             </div>
+
+            <!-- Photo Diary Android App Project -->
+            <div class="project-card">
+                <img src="images/project3.png" alt="Photo Diary Android App">
+
+                <h3>Photo Diary Android App</h3>
+                <ul>
+                    <li>Developed an Android app using Kotlin to capture and store geotagged photos</li>
+                    <li>Designed local database to store metadata including location and timestamps</li>
+                    <li>Integrated device camera APIs for dynamic image capture </li>
+                </ul>
+
+                <!-- Tech Used -->
+                <div class="tech-stack">
+                    <span>Kotlin</span>
+                </div>
+
+                <a href="COS.html" class="project-link" target="_blank">Live Demo</a>
+                <a href="https://github.com/bcroman/UHI_PhotoDiary" class="project-link" target="_blank">GitHub</a>
+            </div>
         </div>
     </section>
 
     <!-- Experience -->
     <section id="experience" class="section">
         <h2>Experience</h2>
-        <p>
-            <strong>Customer Assistant – Lidl</strong><br>
-            Worked in a team-focused retail environment, developing communication, problem-solving,
-            and time management skills while using in-store systems.
-        </p><br>
 
-        <p>
-            <strong>Restaurant Waiter – Ben Wyvis Hotel</strong><br>
-            Delivered customer service, coordinated with team members, and managed time effectively
-            in a fast-paced environment.
-        </p>
+        <div class="experience-item">
+            <h3>Customer Assistant – Lidl</h3>
+            <ul>
+                <li>Delivered customer service in a fast-paced retail environment.</li>
+                <li>Worked collaboratively to meet team targets and support daily operations.</li>
+                <li>Used internal systems for payments and stock management.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Restaurant Waiter – Ben Wyvis Hotel</h3>
+            <ul>
+                <li>Provided service in a high-pressure hospitality environment.</li>
+                <li>Coordinated with team members to support smooth operations.</li>
+                <li>Managed multiple tasks while maintaining service quality.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact -->
