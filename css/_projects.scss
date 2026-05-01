@@ -1,0 +1,91 @@
+@use "variables" as *;
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: $section;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: $text;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  background: $blue-dark;
+  color: $text;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.project-link:hover {
+  background: $blue;
+  color: $card;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tech Used in Projects */
+.tech-stack {
+  margin: 10px 0;
+}
+
+.tech-stack span {
+  background: $border;
+  color: $blue;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  margin: 3px;
+  display: inline-block;
+}
+
+/* Highlight a Project */
+.project-card.featured {
+  border: 2px solid $blue;
+  position: relative;
+}
+
+.project-card.featured::before {
+  content: "Featured Project";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: $blue;
+  color: $card;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}

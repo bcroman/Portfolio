@@ -23,7 +23,12 @@ This portfolio presents my work as a Computing (Software Engineering) student. I
 - HTML5
 - CSS3
 - JavaScript
+- SCSS
 - GitHub Pages
+
+## Run SCSS Framework
+Install SASS Package - `npm install -g sass`  
+Run Watch List - `sass css/style.scss css/style.css --watch`  
 
 ## Projects Featured
 

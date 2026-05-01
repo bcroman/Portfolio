@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+/* =========================
+   SKILLS SECTION
+========================= */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.skills span {
+  background: $card;
+  color: $text;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: $blue;
+  color: $card;
+  transform: translateY(-3px);
+}
